@@ -6,16 +6,20 @@
 
 <struts>
 	<!-- Overwrite Convention -->
-	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
 	<constant name="struts.convention.package.locators" value="controller" />
 	<constant name="struts.convention.action.suffix" value="Controller" />
 	<constant name="struts.convention.action.mapAllMatches" value="true" />
+	<constant name="struts.mapper.class" value="rest" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.custom.i18n.resources" value="properties/errorMessages" />
+	
 	<constant name="struts.convention.default.parent.package" value="MYL" />
 	<constant name="struts.devMode" value="true" />
 	<constant name="struts.custom.i18n.resources" value="global" />
 	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
 	<constant name="struts.mapper.idParameterName" value="idSel" />
-	<constant name="struts.convention.result.path" value="/" />
+	<!-- <constant name="struts.convention.result.path" value="/pages" /> -->
 	<constant name="struts.multipart.maxSize" value="20000000" />		
 	<constant name="struts.action.excludePattern" value="/chatws,/lobbyws,/rest/.*"/>
 	

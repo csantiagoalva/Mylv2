@@ -44,13 +44,13 @@ public class CartaDao extends HibernateDaoSupport {
 	public List<String> findByCriteria() { 		
 		DetachedCriteria dCriteria = DetachedCriteria.forClass(Carta.class);		
 		dCriteria.setProjection(Projections.distinct(Projections.property("raza")));
-		return getHibernateTemplate().findByCriteria(dCriteria);
+		return (List<String>) getHibernateTemplate().findByCriteria(dCriteria);
 	}
 	
 	public List<String> findByCriteriaTipo() { 		
 		DetachedCriteria dCriteria = DetachedCriteria.forClass(Carta.class);		
 		dCriteria.setProjection(Projections.distinct(Projections.property("tipo")));		
-		return getHibernateTemplate().findByCriteria(dCriteria);
+		return (List<String>) getHibernateTemplate().findByCriteria(dCriteria);
 	}
 	
 	public List<Carta> findByCriterioBusqueda(Carta carta) { 		
@@ -82,7 +82,7 @@ public class CartaDao extends HibernateDaoSupport {
 		}
 		
 		
-		return getHibernateTemplate().findByCriteria(dCriteria);
+		return (List<Carta>) getHibernateTemplate().findByCriteria(dCriteria);
 	}
 	
 }

@@ -160,6 +160,14 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
 
 		<!-- Dependencia de Spring que proporciona el módulo de ORM para su configuración 
 			junto a Hibernate -->
@@ -371,12 +379,12 @@
 		<dependency>
 			<groupId>com.jgeppert.struts2.jquery</groupId>
 			<artifactId>struts2-jquery-grid-plugin</artifactId>
-			<version>3.6.0</version>
+			<version>3.7.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-dojo-plugin</artifactId>
-			<version>2.1.8.1</version>
+			<version>${struts.version}</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
@@ -417,17 +425,23 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.kenai.nbpwr</groupId>
+			<artifactId>javax-inject</artifactId>
+			<version>1.0-201002241208</version>
+			<type>nbm</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
 		
 
 
-<!-- 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>3.0.5.RELEASE</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
@@ -449,6 +463,7 @@
 			<version>3.0.5.RELEASE</version>
 		</dependency>
 
+		<!-- 
 		<dependency>
 			<groupId>javassist</groupId>
 			<artifactId>javassist</artifactId>
@@ -463,13 +478,7 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.kenai.nbpwr</groupId>
-			<artifactId>javax-inject</artifactId>
-			<version>1.0-201002241208</version>
-			<type>nbm</type>
-			<scope>compile</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>taglibs</groupId>
 			<artifactId>log</artifactId>
@@ -494,11 +503,7 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>3.5.5-Final</version>
-		</dependency>
+
 				
 		<dependency>
 			<groupId>com.sun.mail</groupId>
